@@ -2,7 +2,7 @@
 commit_message=$(git log -1 --pretty=%B)
 
 # Verifica si estamos en la rama "hotfix" y si el mensaje de commit contiene la frase esperada
-if [ "$(git rev-parse --abbrev-ref HEAD)" == "hotfix" ] && [[ $commit_message != *"A corregir por:"* ]]; then
+if [ "$(git rev-parse --abbrev-ref HEAD)" == "hotfix_errorhome" ] && [[ $commit_message != *"A corregir por:"* ]]; then
     echo "Error: Debes asignar a alguien para verificar el hotfix. El mensaje de commit debe contener 'A corregir por: ...'."
     exit 1
 fi
