@@ -1,0 +1,18 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "rules": {
+        "html/attributes-order": ["error"],
+        "html/closing-tag-for-empty-elements": ["error"],
+        "html/indent": ["error", 2],
+        "html/quotes": ["error", "single"],
+        "html/self-closing-tag-with-trailing-slash": ["error"]
+      },
+    "plugins": ["html"]
+}
